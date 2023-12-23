@@ -20,6 +20,8 @@ public class ProgramClent {
             String remoteIp = inetAddress.getHostAddress();
             System.out.println("Remote IP: " + remoteIp);
             System.out.println("LocalPort:" + socket.getLocalPort());
+            System.out.println();
+            System.out.println("Для отправки личных сообщений используйте формат: @ + имя адресата(без пробелов)");
 
             client.listenForMessage();
             client.sendMessage();
